@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the preprint below."
+title: "HELIOFLOOR: an independent evaluation of Surya's solar-flare head"
+type: software
+authors:
+  - family-names: "Yıldırım"
+    given-names: "Kadir Can"
+    orcid: "https://orcid.org/0009-0008-5098-2547"
+    affiliation: "Independent researcher"
+repository-code: "https://github.com/kadircanyildirm-crypto/heliofloor"
+license: Apache-2.0
+keywords:
+  - solar flares
+  - space weather
+  - forecast verification
+  - foundation models
+  - block bootstrap
+preferred-citation:
+  type: generic
+  title: "An Independent Evaluation of Surya's Solar Flare Forecasting: Cheap Baselines Match a 366M-Parameter Foundation Model"
+  authors:
+    - family-names: "Yıldırım"
+      given-names: "Kadir Can"
+      orcid: "https://orcid.org/0009-0008-5098-2547"
+      affiliation: "Independent researcher"
+  year: 2026
+  date-published: 2026-09-09
+  publisher:
+    name: "ESS Open Archive"
+  doi: "10.22541/essoar.15008581/v1"
+  url: "https://doi.org/10.22541/essoar.15008581/v1"
+  notes: "Preprint; not peer reviewed."

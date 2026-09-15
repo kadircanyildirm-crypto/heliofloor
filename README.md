@@ -1,5 +1,8 @@
 # HELIOFLOOR — an independent evaluation of Surya's solar-flare head
 
+[![DOI](https://img.shields.io/badge/DOI-10.22541%2Fessoar.15008581%2Fv1-blue)](https://doi.org/10.22541/essoar.15008581/v1)
+[![Preprint](https://img.shields.io/badge/preprint-ESS%20Open%20Archive-lightgrey)](https://doi.org/10.22541/essoar.15008581/v1)
+
 Surya is the 366M-parameter heliophysics foundation model released by NASA and
 IBM in August 2025. Its paper reports a solar-flare forecasting score of **TSS
 0.436** against two deep image baselines (AlexNet, ResNet50). This repository
@@ -7,8 +10,10 @@ contains, to our knowledge, the first independent evaluation of the released
 `solar_flares_surya` checkpoint, together with the cheap baselines the benchmark
 does not report.
 
-The manuscript is `paper.pdf`. `PAPER_DRAFT.md` is the same text in
-Markdown, and `PAPER_TR.md` is a full Turkish translation.
+The paper is posted as a preprint on ESS Open Archive:
+[doi:10.22541/essoar.15008581/v1](https://doi.org/10.22541/essoar.15008581/v1).
+`paper.pdf` in this repository is the submitted manuscript, `PAPER_DRAFT.md` is
+the same text in Markdown, and `PAPER_TR.md` is a full Turkish translation.
 
 ## What we did
 
@@ -161,8 +166,27 @@ probabilities are our own output.
 
 ## Citing
 
-A preprint is in preparation. Until it is posted, please cite this repository by
-commit hash. This README will carry the DOI once the preprint is live.
+Please cite the preprint (it has not been peer reviewed):
+
+> Yıldırım, K. C. (2026). *An Independent Evaluation of Surya's Solar Flare
+> Forecasting: Cheap Baselines Match a 366M-Parameter Foundation Model.* ESS Open
+> Archive. https://doi.org/10.22541/essoar.15008581/v1
+
+```bibtex
+@misc{yildirim2026surya,
+  author    = {Y{\i}ld{\i}r{\i}m, Kadir Can},
+  title     = {An Independent Evaluation of Surya's Solar Flare Forecasting:
+               Cheap Baselines Match a 366M-Parameter Foundation Model},
+  year      = {2026},
+  publisher = {ESS Open Archive},
+  doi       = {10.22541/essoar.15008581/v1},
+  url       = {https://doi.org/10.22541/essoar.15008581/v1},
+  note      = {Preprint}
+}
+```
+
+`CITATION.cff` carries the same record, so GitHub's "Cite this repository"
+button produces it too.
 
 ## AI usage disclosure
 
