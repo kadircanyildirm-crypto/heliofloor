@@ -1,0 +1,32 @@
+{
+  "upload_type": "software",
+  "title": "HELIOFLOOR: analysis code and data for an independent evaluation of Surya's solar flare forecasting",
+  "creators": [
+    {
+      "name": "Yıldırım, Kadir Can",
+      "affiliation": "Independent researcher, Eskişehir, Türkiye",
+      "orcid": "0009-0008-5098-2547"
+    }
+  ],
+  "description": "<p>Analysis code, scored model probabilities and a pinned data snapshot for an independent evaluation of the released <code>solar_flares_surya</code> checkpoint of Surya, the 366M-parameter heliophysics foundation model released by NASA and IBM.</p><p>Every numeric claim in the accompanying manuscript is recomputed from this archive by <code>verify_paper.py</code>, which prints a pass/fail line per claim and currently reports 161/161. No GPU, no external downloads and no re-inference are required: the scored probabilities and an unmodified snapshot of the official SuryaBench flare CSV files are included.</p><p>Licensing: the code is Apache-2.0. Two components are not ours and carry the CC BY 4.0 attribution requirement of the SuryaBench flare dataset (Roy et al.): the label column in <code>probs_*.csv</code> and the redistributed snapshot in <code>data/flare/</code>, which is unmodified and documented with upstream revision and checksums in <code>data/flare/PROVENANCE.md</code>.</p>",
+  "license": "Apache-2.0",
+  "access_right": "open",
+  "language": "eng",
+  "keywords": [
+    "solar flare forecasting",
+    "foundation models",
+    "benchmark evaluation",
+    "space weather",
+    "model calibration",
+    "reproducibility",
+    "block bootstrap"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.22541/essoar.15008581/v1",
+      "relation": "isSupplementTo",
+      "scheme": "doi",
+      "resource_type": "publication-preprint"
+    }
+  ]
+}
