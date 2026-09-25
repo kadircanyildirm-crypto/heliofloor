@@ -60,6 +60,10 @@ differences straddle zero for eight of ten method pairs, and no pair survives a 
 family-wise correction. The strongest separation is the shipped 0.5 threshold scoring
 *below* persistence on test (ΔTSS −0.445).
 
+<p align="center">
+  <img src="assets/blocks.png" alt="739 validation hours reduce to 50 independent 24-hour blocks, six of which contain a flare; the bootstrap intervals of the two leading methods overlap almost entirely." width="100%">
+</p>
+
 **2. Calibration is regime-dependent and does not transfer.**
 
 <p align="center">
@@ -79,7 +83,18 @@ validation hours and beats it on identical test hours. On the complete splits it
 TSS 0.430 on the full validation split, with a 95% interval of [0.238, 0.621] that contains
 the reported 0.436.
 
+<p align="center">
+  <img src="figures/fig3_threshold_sweep.png" alt="True skill statistic as a function of the decision threshold, with the two cheap baselines drawn as reference lines; the shipped 0.5 threshold sits far from any optimum in both windows." width="88%">
+</p>
+
+The shipped 0.5 threshold sits far from any optimum in both windows, which is why the
+model's released configuration scores below a persistence rule on test.
+
 **5. The ground moves under the test set.**
+
+<p align="center">
+  <img src="assets/sun-2020-2024.png" alt="The Sun on 15 June 2020 and 15 June 2024 in SDO/AIA 304 A, with the share of hours followed by a flare in each year: 0.5 percent and 69.7 percent." width="100%">
+</p>
 
 <p align="center">
   <img src="figures/fig2_base_rate_drift.png" alt="A 128-fold base-rate shift across the official test split; the pooled score sits above every individual year." width="88%">
