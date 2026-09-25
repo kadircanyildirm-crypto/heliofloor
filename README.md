@@ -127,6 +127,10 @@ that the benchmark cannot rank methods as published — not that any one method 
 
 ## The reported 0.436 cannot be located
 
+<p align="center">
+  <img src="assets/splits.png" alt="Three incompatible split definitions drawn on a timeline, and a table showing ResNet50's TSS reported as 0.018 in one companion paper and 0.261 in the other." width="100%">
+</p>
+
 While verifying our own citations we found that the released artifacts give **three
 mutually incompatible split definitions**, and Table 4 of the model paper names none of
 them — so the headline score is not attributable to any specific evaluation period. Worse,
@@ -150,6 +154,10 @@ This check also resolves a documentation conflict: SuryaBench's text states the 
 10⁻⁴ W m⁻² (X1.0) while calling it M1.0. The released labels follow M1.0 (10⁻⁵ W m⁻²).
 
 ## Reproducing
+
+<p align="center">
+  <img src="assets/pipeline.png" alt="Pipeline: the pinned data snapshot and the scored probabilities feed the shared loader, nine analysis scripts and verify_paper.py, which recomputes every claim and reports 161 of 161." width="100%">
+</p>
 
 **Nothing needs downloading.** The scored probabilities are committed, and so is the exact
 snapshot of the official SuryaBench flare CSVs the results were computed from
