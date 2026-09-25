@@ -50,6 +50,10 @@ Every number in the manuscript is recomputed from the committed data by `verify_
 which prints a pass/fail line per claim, including exact reproduction of every bootstrap
 interval. It currently reports **161/161**.
 
+<p align="center">
+  <img src="assets/three-hours.png" alt="Three hours from the official test split with the model's own probability for each: 0.988 followed by a flare, 0.003 followed by a flare anyway, and 0.365 followed by nothing." width="100%">
+</p>
+
 ## Headline findings
 
 **1. The benchmark's effective sample is far smaller than it appears.** Hours inside a
@@ -105,6 +109,17 @@ The positive rate in the official test split rises from 0.0055 (2020) to 0.697 (
 value (0.056–0.514): a Simpson's paradox. This drift is the common cause behind findings 2
 and 5.
 
+**6. Skill appears regime-split, but only its structural half is estimable.**
+
+<p align="center">
+  <img src="figures/fig4_onset_continuation.png" alt="Complementary skill by regime: persistence is structurally blind to flare-episode onsets and false-alarms through every decay hour." width="88%">
+</p>
+
+Persistence is definitionally blind to the onset of a flare episode and false-alarms on
+every decay hour, so the two methods fail in different places. The model's onset behaviour,
+however, rests on four (validation) and three (test) independent episodes, which supports
+description but not estimation — we report it as an observation and quote no rate.
+
 **What this does not claim.** Eight of the ten paired differences straddle zero, and
 neither exclusion survives a family-wise correction. That is the finding rather than a
 caveat: at 50 and 28 blocks the protocol resolves almost nothing, so these results show
@@ -120,6 +135,10 @@ task: ResNet50's TSS is 0.018 in the Surya paper and 0.261 in SuryaBench, a fact
 fourteen. Details and sources in §2.3 of the manuscript.
 
 ## A leakage trap worth knowing about
+
+<p align="center">
+  <img src="assets/leakage.png" alt="Timeline showing that max_goes_class at time t is the maximum over the following 24 hours, the same window the label describes, verified on 128,328 of 128,328 rows." width="100%">
+</p>
 
 In the released flare CSVs, `max_goes_class[t]` is the maximum class over **[t, t+24h)** —
 it is the *source of the label*, not a past observation. We verified
